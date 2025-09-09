@@ -1,16 +1,16 @@
 funcion guardarrectangulos(bases,alturas)
     Definir gr Como Entero
     Para gr <- 1 Hasta 2 Con Paso 1 Hacer
-        Escribir "Ingrese la base del rectángulo ", gr, " (CM): "
+        Escribir "Ingrese la base del rectÃ¡ngulo ", gr, " (CM): "
         Leer bases[gr]
-        Escribir "Ingrese la altura del rectángulo ", gr, " (CM): "
+        Escribir "Ingrese la altura del rectÃ¡ngulo ", gr, " (CM): "
         Leer alturas[gr]
     FinPara
 finfuncion
 
 funcion modificarrectangulo(bases,alturas)
     Definir modd Como Entero
-    Escribir "Ingrese la posición del rectángulo a modificar (1..5): "
+    Escribir "Ingrese la posiciÃ³n del rectÃ¡ngulo a modificar (1..2): "
     Leer modd
     Si modd >= 1 Y modd <= 2 Entonces
         Escribir "Base actual: ", bases[modd], " Altura actual: ", alturas[modd]
@@ -19,7 +19,7 @@ funcion modificarrectangulo(bases,alturas)
         Escribir "Ingrese la nueva altura:"
         Leer alturas[modd]
     Sino
-        Escribir "Posición inválida."
+        Escribir "PosiciÃ³n invÃ¡lida."
     FinSi
 finfuncion
 
@@ -27,7 +27,7 @@ funcion mostrarareas(bases,alturas)
     Definir ma, area Como Real
     Para ma <- 1 Hasta 2 Con Paso 1 Hacer
         area <- bases[ma] * alturas[ma]
-        Escribir "Rectángulo ", ma, ": Base (CM)=", bases[ma], " Altura (CM)=", alturas[ma], " Área (CM2)=", area
+        Escribir "RectÃ¡ngulo ", ma, ": Base (CM)=", bases[ma], " Altura (CM)=", alturas[ma], " Ãrea (CM2)=", area
     FinPara
 finfuncion
 
@@ -37,9 +37,9 @@ Algoritmo arearectangulo
     
     Repetir
         Escribir "=======MENU======="
-        Escribir "1. Guardar rectángulos"
-        Escribir "2. Modificar un rectángulo"
-        Escribir "3. Mostrar áreas"
+        Escribir "1. Guardar rectÃ¡ngulos"
+        Escribir "2. Modificar un rectÃ¡ngulo"
+        Escribir "3. Mostrar Ã¡reas"
         Escribir "4. Salir"
 		Escribir "=================="
         Leer opcionmenu
@@ -55,4 +55,5 @@ Algoritmo arearectangulo
         FinSegun
     Hasta Que opcion = 4
 FinAlgoritmo
+
 
